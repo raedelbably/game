@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "كاشف الكذب",
+    "slug": "lie-detector-prank",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#07100d",
+    "splash": { "image": "./assets/splash-icon.png", "resizeMode": "contain", "backgroundColor": "#07100d" },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.raed.liedetectorprank",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "يُستخدم الفلاش لتأثير بصري أثناء الفحص الترفيهي.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.raed.liedetectorprank",
+      "versionCode": 1,
+      "permissions": ["VIBRATE", "CAMERA"],
+      "adaptiveIcon": {
+        "backgroundColor": "#07100d",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "plugins": [
+      ["expo-camera", { "cameraPermission": "يُستخدم الفلاش لتأثير بصري أثناء الفحص الترفيهي.", "recordAudioAndroid": false }],
+      ["expo-build-properties", { "ios": { "deploymentTarget": "16.4" } }]
+    ]
+  }
+}
